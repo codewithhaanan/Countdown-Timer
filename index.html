@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown Timer Using Javascript</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="w-full h-screen flex justify-center items-center flex-col bg-[linear-gradient(145deg,#243271,#f5a36c)] text-white"
+  >
+    <h1 class="text-5xl font-bold mb-10 tracking-[1.5px] max-lg:text-[38px]">
+      We are coming soon!
+    </h1>
+    <div
+      class="countdown flex justify-center items-center shadow-[0_5px_25px_rgba(0,0,0,0.4)] py-10 px-8 rounded-[20px] backdrop-blur-xl max-lg:flex-wrap"
+    >
+      <div
+        class="timer bg-[rgba(255,255,255,0.15)] hover:bg-[rgba(255,255,255,0.25)] p-[30px] mx-5 rounded-[20px] flex justify-center items-center flex-col w-full max-w-40 min-w-[100px] h-full transition-all ease-in-out delay-150 max-lg:max-h-[150px] max-lg:m-[20px]"
+      >
+        <span id="days" class="time text-[48px] font-bold">10</span>
+        <span
+          class="label text-[18px] font-bold uppercase tracking-[2px] shadow-[1px,1px,white]"
+          >Days</span
+        >
+      </div>
+      <div
+        class="timer bg-[rgba(255,255,255,0.15)] hover:bg-[rgba(255,255,255,0.25)] p-[30px] mx-5 rounded-[20px] flex justify-center items-center flex-col w-full max-w-40 min-w-[100px] h-full transition-all ease-in-out delay-150 max-lg:max-h-[150px] max-lg:m-[20px]"
+      >
+        <span id="hours" class="time text-[48px] font-bold">12</span>
+        <span
+          class="label text-[18px] font-bold uppercase tracking-[2px] shadow-[1px,1px,white]"
+          >Hours</span
+        >
+      </div>
+      <div
+        class="timer bg-[rgba(255,255,255,0.15)] hover:bg-[rgba(255,255,255,0.25)] p-[30px] mx-5 rounded-[20px] flex justify-center items-center flex-col w-full max-w-40 min-w-[100px] h-full transition-all ease-in-out delay-150 max-lg:max-h-[150px] max-lg:m-[20px]"
+      >
+        <span id="mins" class="time text-[48px] font-bold">30</span>
+        <span
+          class="label text-[18px] font-bold uppercase tracking-[2px] shadow-[1px,1px,white]"
+          >Minutes</span
+        >
+      </div>
+      <div
+        class="timer bg-[rgba(255,255,255,0.15)] hover:bg-[rgba(255,255,255,0.25)] p-[30px] mx-5 rounded-[20px] flex justify-center items-center flex-col w-full max-w-40 min-w-[100px] h-full transition-all ease-in-out delay-150 max-lg:max-h-[150px] max-lg:m-[20px]"
+      >
+        <span id="secs" class="time text-[48px] font-bold">12</span>
+        <span
+          class="label text-[18px] font-bold uppercase tracking-[2px] shadow-[1px,1px,white]"
+          >Secs</span
+        >
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
